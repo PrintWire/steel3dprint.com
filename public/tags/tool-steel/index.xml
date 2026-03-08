@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tool Steel on Steel 3D Print</title>
+    <link>https://steel3dprint.com/tags/tool-steel/</link>
+    <description>Recent content in Tool Steel on Steel 3D Print</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://steel3dprint.com/tags/tool-steel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conformal Cooling with DMLS H13 Tool Steel: Results vs. Conventional Drilled Channels</title>
+      <link>https://steel3dprint.com/articles/guide/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://steel3dprint.com/articles/guide/</guid>
+      <description>Conformal cooling channels in DMLS-printed H13 mold inserts reduce injection molding cycle time 20–40% versus conventionally drilled tooling. This guide quantifies the benefit and the design rules.</description>
+    </item>
+  </channel>
+</rss>
