@@ -3,362 +3,419 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Steel 3D Printing | 17-4 PH & 316L Precision Manufacturing | Industrial Strength</title>
-  <meta name="description" content="Industrial steel 3D printing: 17-4 PH (1365 MPa), 316L stainless (565-586 MPa). Precision tooling, bearings, instruments with corrosion resistance.">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    :root {
-      --primary-color: #2C3E50;
-      --secondary-color: #34495E;
-      --accent-color: #3498DB;
-    }
-
-    .navbar-brand {
-      color: var(--primary-color);
-      font-weight: 700;
-      letter-spacing: 2px;
-    }
-
-    .navbar-nav a::after {
-      background-color: var(--primary-color);
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #2C3E50 0%, #34495E 50%, #455A64 100%);
-    }
-
-    .card {
-      border-top-color: var(--primary-color);
-    }
-
-    .stat-number {
-      background: linear-gradient(135deg, #2C3E50, #34495E);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .timeline::before {
-      background: linear-gradient(180deg, #2C3E50, #34495E, #455A64);
-    }
-
-    .timeline-dot {
-      border-color: var(--primary-color);
-    }
-
-    .form-control:focus {
-      border-color: var(--primary-color);
-      box-shadow: 0 0 0 3px rgba(44, 62, 80, 0.1);
-    }
-
-    .form-submit {
-      background: linear-gradient(135deg, #2C3E50, #34495E);
-    }
-
-    .testimonial {
-      border-left-color: var(--primary-color);
-    }
-  </style>
-<script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Steel 3D Printing",
-    "url": "https://steel3dprint.com",
-    "description": "Industrial steel 3D printing: 17-4 PH (1365 MPa), 316L stainless (565-586 MPa). Precision tooling, bearings, instruments with corrosion resistance.",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "url": "https://steel3dprint.com/contact.html"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Steel 3D Printing",
-    "url": "https://steel3dprint.com"
-  }
-]
-</script>
-    <!-- ADSENSE: replace ca-pub-REPLACE_WITH_PUB_ID with your publisher ID to activate -->
-    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-REPLACE_WITH_PUB_ID" crossorigin="anonymous"></script> -->
+  <meta name="description" content="Steel 3D printing news, research, and services. DMLS, SLM, and DED coverage for tool steel, stainless, and structural steel additive manufacturing.">
+  <title>Steel 3D Printing — Metal Additive Manufacturing News &amp; Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/editorial.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="navbar-container">
-      <div class="navbar-brand">Steel3D Industrial</div>
-      <button class="navbar-toggle">☰</button>
-      <ul class="navbar-nav">
-        <li><a href="#materials">Materials</a></li>
-        <li><a href="#applications">Applications</a></li>
-        <li><a href="#process">Process</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="contact.html" class="cta-button">Get Quote</a></li>
-                    <li><a href="viewer.html" class="nav-link">3D Viewer</a></li>
+
+<!-- ── Header ─────────────────────────────────── -->
+<header class="ed-header">
+  <div class="ed-header-inner">
+    <a href="index.html" class="ed-logo">
+      STEEL<span class="ed-logo-accent">3D</span>PRINT
+    </a>
+    <button class="ed-nav-toggle" aria-label="Menu" onclick="document.querySelector('.ed-nav').classList.toggle('open')">&#9776;</button>
+    <nav class="ed-nav">
+      <a href="index.html" class="active">News</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="advertise.html">Advertise</a>
+      <a href="viewer.html">3D Viewer</a>
+    </nav>
+    <button class="ed-theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">&#9790;</button>
+  </div>
+</header>
+
+<!-- ── Breadcrumbs ────────────────────────────── -->
+<div class="ed-breadcrumbs">
+  <a href="index.html">Home</a> <span>/</span> Metal 3D Printing News
+</div>
+
+<!-- ── Main Layout ────────────────────────────── -->
+<div class="ed-layout">
+  <div class="ed-main">
+
+    <!-- Featured Story -->
+    <article class="ed-hero">
+      <img src="images/13-batch-build-plate-overhead.png" alt="Hyperion Systems 3D printed construction">
+      <div class="ed-hero-overlay"></div>
+      <div class="ed-hero-content">
+        <span class="ed-badge">Breaking</span>
+        <h1><a href="#">Hyperion Systems Prints First Load-Bearing Metal Structure for Residential Construction</a></h1>
+        <div class="ed-hero-meta">
+          <span>April 28, 2026</span>
+          <span>·</span>
+          <span>5 min read</span>
+          <span>·</span>
+          <span>By PrintWire Editorial</span>
+        </div>
+        <p class="ed-hero-excerpt">The Dubai-based startup used a proprietary DED system to print a 12-meter steel truss in under 18 hours — bypassing traditional welding entirely. Certified to Eurocode 3.</p>
+      </div>
+    </article>
+
+    <!-- Stats Bar -->
+    <div class="ed-stats">
+      <div class="ed-stat">
+        <div class="ed-stat-value">99.7%</div>
+        <div class="ed-stat-label">Part Density</div>
+      </div>
+      <div class="ed-stat">
+        <div class="ed-stat-value">±0.1mm</div>
+        <div class="ed-stat-label">Tolerance</div>
+      </div>
+      <div class="ed-stat">
+        <div class="ed-stat-value">6</div>
+        <div class="ed-stat-label">Alloy Families</div>
+      </div>
+      <div class="ed-stat">
+        <div class="ed-stat-value">48hr</div>
+        <div class="ed-stat-label">Quote Turnaround</div>
+      </div>
+    </div>
+
+    <!-- Latest News — Live RSS Feed -->
+    <div class="ed-section-label">
+      Latest News
+      <a href="#">View All &rarr;</a>
+    </div>
+    <div class="ed-card-grid" id="newsGrid">
+      <div style="grid-column: 1/-1; text-align:center; padding:2rem; color:var(--text-faint);">Loading latest news…</div>
+    </div>
+
+    <!-- More Stories — List Format -->
+    <div class="ed-section-label">
+      Analysis &amp; Deep Dives
+      <a href="#">View All &rarr;</a>
+    </div>
+    <div class="ed-list">
+      <article class="ed-list-item">
+        <img src="images/01-titanium-turbine.png" alt="Topology-optimized aerospace bracket">
+        <div>
+          <span class="ed-badge">Aerospace</span>
+          <div class="ed-card-meta">April 22, 2026 · 8 min read</div>
+          <h3><a href="#">Why Boeing Shifted From Casting to DMLS for 787 Nacelle Brackets — And What It Means for the Supply Chain</a></h3>
+          <p class="ed-card-excerpt">The decision to consolidate 17 cast parts into 3 printed components saved 4.2kg per aircraft — but the real story is what it does to Tier 2 suppliers.</p>
+        </div>
+      </article>
+      <article class="ed-list-item">
+        <img src="images/20-raw-vs-finished.png" alt="Inconel 718 impeller">
+        <div>
+          <span class="ed-badge">Materials</span>
+          <div class="ed-card-meta">April 20, 2026 · 7 min read</div>
+          <h3><a href="#">Inconel 718 vs. Haynes 282: Choosing the Right Superalloy for High-Temperature Metal AM</a></h3>
+          <p class="ed-card-excerpt">Both survive 700°C+, but their printability, post-processing requirements, and fatigue performance diverge significantly. A materials engineer's comparison.</p>
+        </div>
+      </article>
+      <article class="ed-list-item">
+        <img src="images/11-ded-nozzle-closeup.png" alt="Conformal cooling insert">
+        <div>
+          <span class="ed-badge">Industrial</span>
+          <div class="ed-card-meta">April 18, 2026 · 10 min read</div>
+          <h3><a href="#">Conformal Cooling 2026: The ROI Data From 200+ Injection Mold Inserts</a></h3>
+          <p class="ed-card-excerpt">We aggregated cycle-time data from 14 service bureaus. The average reduction: 32%. But the variance tells a more interesting story.</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Industries Section -->
+    <div class="ed-section-label">
+      Industries We Cover
+    </div>
+    <div class="ed-card-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2.5rem;">
+      <a href="#" class="ed-card" style="text-align:center;">
+        <img class="ed-card-img" src="images/01-titanium-turbine.png" alt="Aerospace">
+        <div class="ed-card-body"><h3>Aerospace</h3></div>
+      </a>
+      <a href="#" class="ed-card" style="text-align:center;">
+        <img class="ed-card-img" src="images/08-medical-implant.png" alt="Medical">
+        <div class="ed-card-body"><h3>Medical</h3></div>
+      </a>
+      <a href="#" class="ed-card" style="text-align:center;">
+        <img class="ed-card-img" src="images/11-ded-nozzle-closeup.png" alt="Industrial">
+        <div class="ed-card-body"><h3>Industrial</h3></div>
+      </a>
+      <a href="#" class="ed-card" style="text-align:center;">
+        <img class="ed-card-img" src="images/06-automotive-manifold.png" alt="Automotive">
+        <div class="ed-card-body"><h3>Automotive</h3></div>
+      </a>
+      <a href="#" class="ed-card" style="text-align:center;">
+        <img class="ed-card-img" src="images/02-silver-jewelry-collection.png" alt="Jewelry">
+        <div class="ed-card-body"><h3>Jewelry</h3></div>
+      </a>
+      <a href="#" class="ed-card" style="text-align:center;">
+        <img class="ed-card-img" src="images/07-bronze-architectural-hardware.png" alt="Architecture">
+        <div class="ed-card-body"><h3>Architecture</h3></div>
+      </a>
+    </div>
+
+    <!-- Load More -->
+    <div class="ed-load-more">
+      <button>Load More Articles</button>
+    </div>
+
+  </div>
+
+  <!-- ── Sidebar ─────────────────────────────── -->
+  <aside class="ed-sidebar">
+
+    <!-- Newsletter -->
+    <div class="ed-sidebar-block ed-newsletter">
+      <h4>Newsletter</h4>
+      <p>Metal AM news, material breakthroughs, and industry analysis — delivered weekly. No spam.</p>
+      <form action="https://api.web3forms.com/submit" method="POST" onsubmit="this.querySelector('button').textContent='Subscribed!';this.querySelector('button').disabled=true;">
+        <input type="hidden" name="access_key" value="6f33053b-6d08-414b-9615-665f88c98da8">
+        <input type="hidden" name="subject" value="Newsletter Signup — steel3dprint.com">
+        <input type="hidden" name="from_name" value="Newsletter Signup">
+        <input type="hidden" name="ccs" value="printwire@gmail.com">
+        <input type="email" name="email" placeholder="your@email.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Popular Stories -->
+    <div class="ed-sidebar-block">
+      <h4>Most Read</h4>
+      <div class="ed-popular-item">
+        <span class="ed-popular-num">1</span>
+        <div>
+          <h3><a href="#">Ti6Al4V Fatigue Data: What 500 Test Bars Reveal About As-Built vs. HIP'd Parts</a></h3>
+          <div class="ed-popular-meta">12.4K reads</div>
+        </div>
+      </div>
+      <div class="ed-popular-item">
+        <span class="ed-popular-num">2</span>
+        <div>
+          <h3><a href="#">The Real Cost Per Part: DMLS vs. Investment Casting at Volume</a></h3>
+          <div class="ed-popular-meta">9.8K reads</div>
+        </div>
+      </div>
+      <div class="ed-popular-item">
+        <span class="ed-popular-num">3</span>
+        <div>
+          <h3><a href="#">Binder Jetting Metal: Where It Actually Makes Sense (And Where It Doesn't)</a></h3>
+          <div class="ed-popular-meta">8.1K reads</div>
+        </div>
+      </div>
+      <div class="ed-popular-item">
+        <span class="ed-popular-num">4</span>
+        <div>
+          <h3><a href="#">316L Surface Roughness: Comparing 12 Post-Processing Methods Head to Head</a></h3>
+          <div class="ed-popular-meta">7.3K reads</div>
+        </div>
+      </div>
+      <div class="ed-popular-item">
+        <span class="ed-popular-num">5</span>
+        <div>
+          <h3><a href="#">Why Your Metal AM Service Bureau Keeps Missing Tolerances (And How to Fix the RFQ)</a></h3>
+          <div class="ed-popular-meta">6.9K reads</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ad Placeholder -->
+    <div class="ed-sidebar-block" style="text-align:center; color: var(--text-faint); font-size: 0.75rem; padding: 2.5rem 1rem;">
+      <div style="border: 1px dashed var(--border); border-radius: 4px; padding: 2rem 1rem;">
+        Ad Space<br>300×250
+      </div>
+    </div>
+
+    <!-- Network Links -->
+    <div class="ed-sidebar-block">
+      <h4>PrintWire Network</h4>
+      <div class="ed-network-links">
+        <a href="https://metalpowder.co">Metal Powder</a>
+        <a href="https://3dprinttissue.com">Bioprinting</a>
+        <a href="https://3dprintfood.com">Food Printing</a>
+        <a href="https://3dprintceramic.com">Ceramics</a>
+        <a href="https://3dprintcircuitry.com">Electronics</a>
+        <a href="https://3dprintjewelry.com">Jewelry</a>
+        <a href="https://3dprintarchitecture.com">Architecture</a>
+        <a href="https://3dprintpipes.com">Industrial</a>
+        <a href="https://sendcutship.com">Manufacturing</a>
+        <a href="https://dmls3d.com">DMLS3D</a>
+        <a href="https://3dprinttitanium.com">Titanium</a>
+        <a href="https://3dprintsolar.com">Solar</a>
+      </div>
+    </div>
+
+    <!-- Quick Quote CTA -->
+    <div class="ed-sidebar-block" style="background: linear-gradient(135deg, rgba(0,217,255,0.08), rgba(0,168,204,0.04)); border-color: var(--border-accent);">
+      <h4 style="color: var(--accent);">Get a Quote</h4>
+      <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.5;">Need metal parts printed? Describe your project and get a response within 24 hours.</p>
+      <a href="contact.html" style="display:block;text-align:center;padding:0.65rem;background:var(--accent);border-radius:4px;color:#000;font-weight:600;font-size:0.8rem;transition:background 0.25s;" onmouseover="this.style.background='var(--accent-dark)'" onmouseout="this.style.background='var(--accent)'">Request Quote</a>
+    </div>
+
+  </aside>
+</div>
+
+<!-- ── Footer ─────────────────────────────────── -->
+<footer class="ed-footer">
+  <div class="ed-footer-inner">
+    <div class="ed-footer-brand">
+      <div class="ed-logo" style="font-size:1.3rem; margin-bottom: 0.5rem;">STEEL<span class="ed-logo-accent">3D</span>PRINT</div>
+      <p>The authoritative source for metal additive manufacturing news, materials research, and service bureau intelligence. Part of the PrintWire network — 194 sites covering every vertical in 3D printing.</p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">News</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-background"><img src="images/01-titanium-turbine.png" alt="Metal 3D Printing" loading="lazy"><div class="hero-overlay"></div></div><div class="hero-content">
-      <h1>Industrial-Grade Steel 3D Printing</h1>
-      <p>17-4 PH hardness (1365 MPa) and 316L corrosion resistance for tooling, bearings, and precision instruments</p>
-      <div class="hero-cta">
-        <a href="#materials" class="btn btn-primary">Explore Materials</a>
-        <a href="contact.html" class="btn btn-secondary">Request Sample</a>
-      </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">DMLS / SLM</a></li>
+        <li><a href="services.html">Rapid Prototyping</a></li>
+        <li><a href="services.html">Post-Processing</a></li>
+        <li><a href="advertise.html">Advertise With Us</a></li>
+      </ul>
     </div>
-  </section>
-
-  <!-- Materials Section -->
-  <section id="materials" class="container">
-    <h2>Steel Alloys for Industrial Manufacturing</h2>
-
-    <div class="grid grid-3">
-      <div class="card">
-        <div class="card-icon" style="background: #ECF0F1; color: #2C3E50;">⚙️</div>
-        <h3>17-4 PH (Grade H1025)</h3>
-        <p><strong>Tensile Strength:</strong> 1365-1372 MPa (hardened & aged)</p>
-        <p><strong>Density:</strong> 7.81 g/cm³</p>
-        <p><strong>Corrosion Resistance:</strong> Excellent in saltwater and chemicals</p>
-        <p>Premium martensitic stainless steel for high-strength applications. Precipitation hardening delivers superior hardness. Industry standard for aerospace tooling, bearing races, and precision instruments requiring both strength and corrosion resistance.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon" style="background: #BDC3C7; color: #34495E;">🛡️</div>
-        <h3>316L Stainless Steel</h3>
-        <p><strong>Tensile Strength:</strong> 565-586 MPa</p>
-        <p><strong>Density:</strong> 8.0 g/cm³</p>
-        <p><strong>Corrosion Resistance:</strong> Superior in acidic and chloride environments</p>
-        <p>Austenitic stainless with low carbon for superior weldability. 316L excels in chemical processing, medical instruments, and marine applications where corrosion resistance takes priority over maximum hardness. Excellent biocompatibility for surgical instruments.</p>
-      </div>
-
-      <div class="card">
-        <div class="card-icon" style="background: #95A5A6; color: #2C3E50;">🔨</div>
-        <h3>Industrial Application Benefits</h3>
-        <p><strong>Design Freedom:</strong> Complex internal geometries impossible to machine</p>
-        <p><strong>Cost Savings:</strong> Zero tooling, 80%+ material waste elimination</p>
-        <p><strong>Performance:</strong> 99.5% density equals forged steel properties</p>
-        <p>Replace 15+ machined parts with single consolidated assembly. Cooling channels in tool inserts increase productivity 40%. Bearing races manufactured as integrated units. Speed and affordability for one-off prototypes through small production runs.</p>
-      </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li><a href="#">Aerospace</a></li>
+        <li><a href="#">Medical</a></li>
+        <li><a href="#">Automotive</a></li>
+        <li><a href="#">Industrial</a></li>
+        <li><a href="#">Materials</a></li>
+      </ul>
     </div>
+  </div>
+  <div class="ed-footer-bottom">
+    <span>&copy; 2026 STEEL 3D PRINT. Part of the <a href="https://3dprint.space" style="color:var(--accent);">PrintWire</a> network.</span>
+    <span>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </span>
+  </div>
+</footer>
 
-    <div class="stats-grid" style="margin-top: 3rem;">
-      <div class="stat-item">
-        <div class="stat-number">1365</div>
-        <div class="stat-label">17-4 PH Tensile (MPa)</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">586</div>
-        <div class="stat-label">316L Tensile (MPa)</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">99.5%</div>
-        <div class="stat-label">Density Achievement</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">±0.001"</div>
-        <div class="stat-label">Precision Tolerance</div>
-      </div>
-    </div>
-  </section>
+<script>
+// ── Mobile nav toggle ──
+document.querySelector('.ed-nav-toggle')?.addEventListener('click', () => {
+  document.querySelector('.ed-nav').classList.toggle('open');
+});
 
-  <!-- Applications Section -->
-  <section id="applications">
-    <div class="container">
-      <h2>Real-World Applications</h2>
+// ── Theme toggle (light/dark) ──
+(function() {
+  const btn = document.getElementById('themeToggle');
+  const root = document.documentElement;
 
-      <div class="feature-row">
-        <div class="feature-image">
-          <img src="images/16-slm-recoater-blade.png" alt="Precision tool insert">
-        </div>
-        <div class="feature-content">
-          <h3>Precision Tooling & Molds</h3>
-          <p>Traditional mold-making requires 12-16 weeks and $50,000+. 17-4 PH 3D printing delivers production-ready inserts in 4-6 weeks. Cooling channels integrated directly into tool steel:</p>
-          <ul class="feature-list">
-            <li>Injection molding inserts with integrated cooling</li>
-            <li>40% improved cycle times through optimized channels</li>
-            <li>Complex undercuts without manual deburring</li>
-            <li>Prototype molds for design validation</li>
-            <li>Hardness 50-52 HRC post-aging (competitive with traditional)</li>
-          </ul>
-        </div>
-      </div>
+  function setTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    localStorage.setItem('ed-theme', theme);
+    btn.innerHTML = theme === 'dark' ? '&#9790;' : '&#9728;';
+    btn.title = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+  }
 
-      <div class="feature-row reverse" style="margin-top: 3rem;">
-        <div class="feature-image">
-          <img src="images/04-lattice-cube-hands.png" alt="Bearing component">
-        </div>
-        <div class="feature-content">
-          <h3>Bearings & Mechanical Components</h3>
-          <p>Consolidated bearing assemblies with integral races and retention features. 316L stainless for corrosion resistance in harsh environments:</p>
-          <ul class="feature-list">
-            <li>Integral ball/roller races eliminating separate components</li>
-            <li>Reduced assembly labor and fastening requirements</li>
-            <li>Lightweight designs with 30% weight reduction</li>
-            <li>Marine and chemical processing applications</li>
-            <li>Custom bearing geometries for specialized machinery</li>
-          </ul>
-        </div>
-      </div>
+  // Init: check saved preference, then system preference
+  const saved = localStorage.getItem('ed-theme');
+  if (saved) {
+    setTheme(saved);
+  } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+    setTheme('light');
+  } else {
+    setTheme('dark');
+  }
 
-      <div class="feature-row" style="margin-top: 3rem;">
-        <div class="feature-image">
-          <img src="images/17-quality-inspection.png" alt="Surgical instruments">
-        </div>
-        <div class="feature-content">
-          <h3>Medical & Surgical Instruments</h3>
-          <p>316L stainless steel precision instruments with superior corrosion resistance. Suitable for surgical grade applications requiring hardness and biocompatibility:</p>
-          <ul class="feature-list">
-            <li>Surgical clamps and forceps with ergonomic geometry</li>
-            <li>Instrument handles with integrated textured grips</li>
-            <li>Custom-designed surgical tools for specialized procedures</li>
-            <li>Autoclavable components with superior durability</li>
-            <li>ISO 5832-5 stainless steel medical grade compliance</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+  btn.addEventListener('click', () => {
+    const current = root.getAttribute('data-theme') || 'dark';
+    setTheme(current === 'dark' ? 'light' : 'dark');
+  });
+})();
 
-  <!-- Process Section -->
-  <section id="process">
-    <div class="container">
-      <h2>DMLS/SLM Process for Steel</h2>
+// ── RSS News Feed ──
+(function() {
+  var grid = document.getElementById('newsGrid');
+  if (!grid) return;
 
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Material Preparation</h4>
-            <p>Pre-alloyed steel powder (17-4 PH or 316L, 20-60 µm particle size) loaded into build chamber. Nitrogen atmosphere maintained for stainless steel (oxygen <500 ppm). Build temperature 200-400°C to minimize distortion in high-strength alloys.</p>
-          </div>
-        </div>
+  var feeds = [
+    { url: 'https://news.google.com/rss/search?q=metal+3d+printing+additive+manufacturing&hl=en-US&gl=US&ceid=US:en', name: 'Google News' },
+    { url: 'https://news.google.com/rss/search?q=DMLS+SLM+metal+printing&hl=en-US&gl=US&ceid=US:en', name: 'Google News' },
+    { url: 'https://news.google.com/rss/search?q=metal+additive+manufacturing+titanium+inconel&hl=en-US&gl=US&ceid=US:en', name: 'Google News' },
+    { url: 'https://www.metal-am.com/feed/', name: 'Metal AM' },
+    { url: 'https://3dprintingindustry.com/feed/', name: '3DPI' }
+  ];
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Layer-by-Layer Laser Melting</h4>
-            <p>Fiber laser (500-1000W for steel) melts powder at 0.030-0.100mm layer thickness. Steel requires higher laser power than titanium due to thermal conductivity. Scan speed 500-1500 mm/min. 17-4 PH builds achieve 99.5% density as-built, comparable to forged steel.</p>
-          </div>
-        </div>
+  var api = 'https://api.rss2json.com/v1/api.json?rss_url=';
+  var articles = [];
+  var loaded = 0;
+  var total = feeds.length;
+  var fallbackImgs = [
+    'images/13-batch-build-plate-overhead.png','images/20-raw-vs-finished.png','images/15-support-removal.png',
+    'images/10-dmls-machine-interior.png','images/08-medical-implant.png','images/18-powder-handling.png',
+    'images/01-titanium-turbine.png','images/11-ded-nozzle-closeup.png'
+  ];
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Stress Relief Heat Treatment</h4>
-            <p>Post-build stress relief at 1150°C (for 17-4 PH) or 1150°C (for 316L), 1-2 hours. Critical for dimensional stability and hardness. 17-4 PH then precipitation hardened at 480°C for 1 hour to achieve H1025 condition (1365 MPa).</p>
-          </div>
-        </div>
+  var timeout = setTimeout(function() { render(); }, 8000);
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h4>Finishing & Hardness Verification</h4>
-            <p>Support removal via CNC or EDM. Grinding to achieve surface finish Ra 0.4-0.8 µm for bearing races or tool surfaces. Hardness testing confirms 50-52 HRC for 17-4 PH. Tensile samples verify material properties per ASTM E8 standards.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  feeds.forEach(function(feed) {
+    fetch(api + encodeURIComponent(feed.url))
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        if (data.status === 'ok' && data.items) {
+          data.items.forEach(function(item) {
+            articles.push({
+              title: item.title,
+              link: item.link,
+              desc: stripHtml(item.description).substring(0,140) + '…',
+              date: item.pubDate,
+              img: item.thumbnail || (item.enclosure && item.enclosure.link) || '',
+              source: feed.name
+            });
+          });
+        }
+      })
+      .catch(function(){})
+      .then(function() {
+        loaded++;
+        if (loaded === total) { clearTimeout(timeout); render(); }
+      });
+  });
 
-  <!-- Case Studies -->
-  <section>
-    <div class="container">
-      <h2>Case Studies: Industrial Success Stories</h2>
+  function stripHtml(html) {
+    var d = document.createElement('div'); d.innerHTML = html;
+    return d.textContent || '';
+  }
+  function esc(s) {
+    var d = document.createElement('div'); d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
 
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>Injection Molding Tool Inserts</h3>
-          <p><strong>Challenge:</strong> Complex mold cavity with integrated cooling channels requiring 16-week lead time and $75,000 investment.</p>
-          <p><strong>Solution:</strong> 17-4 PH DMLS insert with optimized cooling geometry designed for 3D printing. Integrated channels impossible with traditional drilling.</p>
-          <p><strong>Results:</strong> 5-week delivery, $18,000 cost, 40% cycle time improvement through superior cooling, 6-month payback through increased productivity.</p>
-        </div>
+  function render() {
+    if (!articles.length) {
+      grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:2rem;color:var(--text-faint);">Unable to load news feeds.</div>';
+      return;
+    }
 
-        <div class="card">
-          <h3>Consolidated Bearing Assembly</h3>
-          <p><strong>Challenge:</strong> Bearing assembly required 7 separate machined components, complex assembly, high scrap rate during production.</p>
-          <p><strong>Solution:</strong> Consolidated all bearing races, seals, and retention features into single 316L steel component via DMLS.</p>
-          <p><strong>Results:</strong> 85% reduction in assembly labor, single-pass assembly, 30% lighter final product, zero additional fasteners required.</p>
-        </div>
-
-        <div class="card">
-          <h3>Custom Surgical Instruments</h3>
-          <p><strong>Challenge:</strong> Hospital needed ergonomic custom surgical clamps for specialized procedure. Traditional manufacturing not viable for low volume.</p>
-          <p><strong>Solution:</strong> 316L stainless steel instruments designed with integrated grip texturing and optimized jaw geometry for precision.</p>
-          <p><strong>Results:</strong> Instruments delivered in 4 weeks, improved surgeon ergonomics, 100% biocompatibility verified, cost-effective even for single units.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- News Section -->
-  <section>
-    <div class="container">
-      <h2>Latest Steel 3D Printing News</h2>
-      <div id="news-feed" class="news-feed"></div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section style="background: linear-gradient(135deg, #2C3E50, #34495E); color: white; text-align: center;">
-    <div class="container">
-      <h2 style="color: white;">Ready to Replace Your Tooling & Instruments?</h2>
-      <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; margin-bottom: 2rem;">Get a free DFM analysis for your next steel component</p>
-      <a href="contact.html" class="btn" style="background: white; color: #2C3E50; font-weight: 700; padding: 1rem 2rem; font-size: 1.1rem;">Request Engineering Consultation</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>Steel3D Industrial</h4>
-        <p>Industrial-grade steel 3D printing for tooling, bearings, and precision manufacturing.</p>
-        <div class="social-links">
-          <a href="#" title="LinkedIn">in</a>
-          <a href="#" title="Twitter">𝕏</a>
-          <a href="#" title="Email">✉</a>
-        </div>
-      </div>
-
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </div>
-
-      <div class="footer-section">
-        <h4>Materials</h4>
-        <a href="#materials">17-4 PH Steel</a>
-        <a href="#materials">316L Stainless</a>
-        <a href="#applications">Applications</a>
-        <a href="#process">Process</a>
-      </div>
-
-      <div class="footer-section">
-        <h4>Resources</h4>
-        <a href="#news">Industry News</a>
-        <a href="services.html">Design Guidelines</a>
-        <a href="#">Specifications</a>
-        <a href="#">Blog</a>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 Steel3D Industrial. All rights reserved. | Privacy Policy | Terms of Service</p>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-
-    <div class="network-badge" style="background:#111;border-top:1px solid #333;text-align:center;padding:0.6rem 1rem;font-size:0.75rem;color:#888;">
-      Part of the <a href="https://dmls3d.com" style="color:#aaa;text-decoration:none;font-weight:600;">Metal 3D Printing Network</a>
-    </div>
+    articles.sort(function(a,b){ return new Date(b.date) - new Date(a.date); });
+    var top = articles.slice(0, 8);
+    var html = '';
+    top.forEach(function(a, i) {
+      var d = new Date(a.date);
+      var ds = d.toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'});
+      var img = a.img || fallbackImgs[i % fallbackImgs.length];
+      var fb = fallbackImgs[(i+1) % fallbackImgs.length];
+      html += '<article class="ed-card" style="cursor:pointer" onclick="window.open(\'' + esc(a.link) + '\',\'_blank\',\'noopener\')">' +
+        '<img class="ed-card-img" src="' + esc(img) + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'' + fb + '\'">' +
+        '<div class="ed-card-body">' +
+          '<span class="ed-badge">' + esc(a.source) + '</span>' +
+          '<div class="ed-card-meta">' + ds + '</div>' +
+          '<h3><a href="' + esc(a.link) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">' + esc(a.title) + '</a></h3>' +
+          '<p class="ed-card-excerpt">' + esc(a.desc) + '</p>' +
+        '</div></article>';
+    });
+    grid.innerHTML = html;
+  }
+})();
+</script>
 </body>
 </html>
